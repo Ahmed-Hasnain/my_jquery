@@ -1,0 +1,17 @@
+<br>
+<div id="box">Get Pakista's Covid 19 Data</div>
+<br>
+<input type="button" id="btn" value="Submit">
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$('#btn').click(function(){
+	jQuery.ajax({
+		url:'https://api.covid19api.com/total/country/pakistan',
+		success:function(result){
+			console.log(result);
+		}
+	});
+});
+	
+</script>

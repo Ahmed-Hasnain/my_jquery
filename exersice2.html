@@ -1,0 +1,20 @@
+<form id="frm">
+	<input type="text" id="name">
+	<input type="button" id="btn" value="Submit">
+</form>
+
+<h2 id="msg"></h2>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('#btn').click(function(){
+		name = $('#name').val();
+		if (name == '') {
+			$('#msg').html('Please Enter Name');
+		}else {
+			$('#frm').fadeOut(2000);
+			$('#msg').html('Welcom Mr '+ name);
+		}
+	});
+	
+</script>

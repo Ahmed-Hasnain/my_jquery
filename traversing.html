@@ -1,0 +1,40 @@
+<div class="p div">
+	<div class="c1 div"></div>
+	<div class="c2 div">
+		<div class="c2-1 div"></div>
+		<div class="c2-2 div abc"></div>
+		<div class="c2-3 div"></div>
+		<div class="c2-4 div"></div>
+		<div class="c2-5 div abc"></div>
+	</div>
+</div>
+
+<input type="button" id="btn" value="Click">
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+$('#btn').click(function(){
+	//console.log($('.c2').children().css('background-color','green'));
+	//console.log($('.c2').parent().css('background-color','green'));
+	//console.log($('.c2').parents().css('background-color','green'));
+	//console.log($('.c2').parentsUntil().css('background-color','green'));
+	//$('.c2').find('.c2-3').css('background-color','green');
+	//$('.c2-1').nextAll().css('background-color','green');
+	//$('.c2-5').prevUntil('.c2-2').css('background-color','green');
+	//$('.p .c2 div').first().css('background-color','green');
+	//$('.p .c2 div').last().css('background-color','green');
+	//$('.p .c2 div').eq(0).css('background-color','green');
+	//$('.p .c2 div').eq(4).css('background-color','green');
+	//$('.c2 div').filter('.abc').css('background-color','green');
+	$('.c2 div').not('.abc').css('background-color','green');
+});
+	
+</script>
+
+<style type="text/css">
+	.div{
+		width: 200px;
+		height: 200px;
+	}
+</style>

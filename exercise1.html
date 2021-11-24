@@ -1,0 +1,15 @@
+<input type="text" id="name">
+<h2 id="msg"></h2>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$('#name').keyup(function(){
+		name = $('#name').val();
+		if (name == '') {
+			$('#msg').html('');
+		}else {
+			$('#msg').html('Welcom Mr '+ name);
+		}
+	});
+	
+</script>

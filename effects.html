@@ -1,0 +1,73 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+
+<div id="box" class="box" >
+	
+</div>
+
+<br><br>
+<input type="button" name="click" id="hide" value="Hide">
+<input type="button" name="click" id="show" value="Show">
+<input type="button" name="click" id="toggle" value="Toggle">
+<br><br>
+<input type="button" name="click" id="fadein" value="Fade In">
+<input type="button" name="click" id="fadeout" value="Fade Out">
+<input type="button" name="click" id="fadetoggle" value="Fade Toggle">
+<br><br>
+<input type="button" name="click" id="slidein" value="slide Up">
+<input type="button" name="click" id="slideout" value="slide Down">
+<input type="button" name="click" id="slidetoggle" value="slide Toggle">
+<br><br>
+<input type="button" name="click" id="animate" value="Animate">
+
+
+<script type="text/javascript">
+	$('#hide').click(function(){
+		$('#box').hide(1000);
+	});	
+
+	$('#show').click(function(){
+		$('#box').show(1000);
+	});	
+
+	$('#toggle').click(function(){
+		$('#box').toggle(1000);
+	});	
+
+	$('#fadein').click(function(){
+		$('#box').fadeIn(1000);
+	});	
+
+	$('#fadeout').click(function(){
+		$('#box').fadeOut(1000);
+	});	
+
+	$('#fadetoggle').click(function(){
+		$('#box').fadeToggle(1000);
+	});	
+
+	$('#slidein').click(function(){
+		$('#box').slideUp(1000);
+	});	
+
+	$('#slideout').click(function(){
+		$('#box').slideDown(1000);
+	});	
+
+	$('#slidetoggle').click(function(){
+		$('#box').slideToggle(1000);
+	});	
+
+	$('#animate').click(function(){
+		$('#box').animate({
+			width: '400px',
+			height: '400px'
+		});
+	});	
+</script>
+	
+<style type="text/css">
+	#box{
+		background-color:red; height:100px; width:100px;
+	}
+</style>
+

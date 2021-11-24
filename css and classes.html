@@ -1,0 +1,45 @@
+<h4 id="box" class="test">Add Or Remove Class</h4>
+<br>
+<input type="button" value="Add" id="btn">
+<input type="button" value="Remove" id="btn2">
+<input type="button" value="Toggle" id="btn3">
+<input type="button" value="Add Style" id="btn4">
+<input type="button" value="Get Style" id="btn5">
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+$('#btn').click(function(){
+	$('#box').addClass('test');
+});
+
+$('#btn2').click(function(){
+	$('#box').removeClass('test');
+});
+
+$('#btn3').click(function(){
+	$('#box').toggleClass('test');
+});
+
+$('#btn4').click(function(){
+	$('#box').css({
+		'color':'red',
+		'font-size':'30px',
+		'background-color':'black'
+	});
+});
+
+$('#btn5').click(function(){
+	console.log($('#box').css('font-size'));
+});
+
+	
+</script>
+
+<style type="text/css">
+	.test{
+		color: red;
+		font-size: 20px;
+	}
+</style>

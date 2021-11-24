@@ -1,0 +1,27 @@
+<h4>Add More</h4>
+<br>
+<table id="tbl">
+	<tr id="tr1">
+		<td>name</td>
+		<td><input type="text"></td>
+		<td><input type="button" value="Add" id="btn"></td>
+	</tr>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+id=1; 
+$('#btn').click(function(){
+	id++;
+	html = '<tr id="tr'+id+'"><td>name</td><td><input type="text"></td><td><input type="button" value="Remove" class="remove" data-id="'+id+'"></td></tr>';
+	$('#tbl').append(html);
+});
+
+$('body').on('click','.remove',function(){
+	
+	tid = jQuery(this).attr('data-id');
+	$('#tr'+tid).remove();
+	
+});
+	
+</script>

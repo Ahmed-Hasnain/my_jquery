@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" crossorigin="anonymous"></script>
+
+
+
+<div id="box1" class="box" style="background-color:red; height:100px; width:100px;"></div>
+<br><br>
+<div id="box2" class="box" style="background-color:gray; height:100px; width:100px;"></div>
+<br><br>
+<input type="button" name="click" id="btn" value="Click Me">
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+			$('#btn').click(function(){
+				$('.box').slideUp(9000);
+     	});
+	});
+</script>
+	
+
